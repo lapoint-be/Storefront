@@ -1,4 +1,18 @@
 body {
   width: 100%;
   margin: auto;
+  background-color: #666666;
+}
+
+.sidebar {
+  display: none;
+}
+
+.collapsible {
+  display: none;
+}
+
+.carousel {
+  width: 80%;
+  margin: auto;
 }
