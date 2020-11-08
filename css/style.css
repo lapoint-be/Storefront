@@ -1,11 +1,21 @@
 body {
   width: 100%;
   margin: auto;
-  background-color: #666666;
+  background-color: #515052;
+}
+
+footer {
+  background-color: #333138;
+  color: #d5ac4e;
+}
+
+nav {
+  color: #d5ac4e;
+  background-color: #333138;
 }
 
 .sidebar {
-  display: none;
+  display: block;
 }
 
 .collapsible {
@@ -13,6 +23,68 @@ body {
 }
 
 .carousel {
-  width: 80%;
+  width: inherit;
   margin: auto;
+}
+
+.banner {
+  height: inherit;
+  width: inherit;
+  margin: auto;
+}
+
+.thumbs {
+  max-height: inherit;
+  max-width: inherit;
+  margin-bottom: 10em;
+  justify-content: center;
+}
+
+.ctext {
+  position: absolute;
+  bottom: 1em;
+}
+
+.cfoot {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.cats {
+  margin: auto;
+  max-width: 20%;
+}
+.navi {
+  display: inherit;
+  justify-content: center;
+  background-color: #222;
+  color: #BBB;
+  padding: 1em;
+  flex-direction: column;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .navi {flex-direction: row;}
+}
+.navi a {
+  color: #d5ac4e;
+  text-decoration: none;
+}
+.trigram {
+  font-size: 1.75em;
+  display: none;
+}
+@media screen and (max-width: 1920px) {
+  .navi a {display: none;}
+  .navi a.trigram {display: inherit; align-self: flex-end;}
+}
+@media screen and (max-width: 1920px) {
+  .navi.responsive {align-items: center;}
+  .navi.responsive a {display:inherit;}
+  .navi.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
+  .navi.responsive a.trigram::after {content:'\000D7'; visibility:visible; text-indent: -.5em;}
 }
